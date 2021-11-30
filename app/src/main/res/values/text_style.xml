@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="poppins_black">0</integer>
+    <integer name="poppins_blackItalic">1</integer>
+    <integer name="poppins_bold">2</integer>
+    <integer name="poppins_boldItalic">3</integer>
+    <integer name="poppins_extraBold">4</integer>
+    <integer name="poppins_extraBoldItalic">5</integer>
+    <integer name="poppins_extraLight">6</integer>
+    <integer name="poppins_extraLightItalic">7</integer>
+    <integer name="poppins_italic">8</integer>
+    <integer name="poppins_light">9</integer>
+    <integer name="poppins_lightItalic">10</integer>
+    <integer name="poppins_medium">11</integer>
+    <integer name="poppins_mediumItalic">12</integer>
+    <integer name="poppins_regular">13</integer>
+    <integer name="poppins_semibold">14</integer>
+    <integer name="poppins_semiBoldItalic">15</integer>
+    <integer name="poppins_thin">16</integer>
+    <integer name="poppins_thinItalic">17</integer>
+</resources>

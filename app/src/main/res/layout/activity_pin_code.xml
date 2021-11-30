@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    tools:context=".ui.activity.PinCodeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:background="@drawable/background_image_login">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/man_women" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="@dimen/_400sdp"
+                android:layout_height="@dimen/_400sdp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/number_pad_bg"
+                android:orientation="vertical">
+
+                <com.netbazaar.view.NetbazaarTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_45sdp"
+                    android:text="@string/enter_passcode"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_7sdp"
+                    app:textStyle="@integer/poppins_regular" />
+
+                <LinearLayout
+                    android:id="@+id/mPinCodeView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center">
+
+                    <View
+                        android:id="@+id/mFirstView"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@drawable/circle" />
+
+                    <View
+                        android:id="@+id/mSecondView"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@drawable/circle_border" />
+
+                    <View
+                        android:id="@+id/mThirdView"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@drawable/circle_border" />
+
+                    <View
+                        android:id="@+id/mFourthView"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@drawable/circle_border" />
+
+                    <View
+                        android:id="@+id/mFifthView"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@drawable/circle_border" />
+
+                    <View
+                        android:id="@+id/mSixthView"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:background="@drawable/circle_border" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal|center_vertical">
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/circle" />
+
+                <com.netbazaar.view.NetbazaarTextView
+                    android:id="@+id/mTextTermsCondition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:text="@string/terms_condition"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    app:textStyle="@integer/poppins_regular" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:background="@drawable/circle" />
+
+                <com.netbazaar.view.NetbazaarTextView
+                    android:id="@+id/mTextPrivacyPolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:text="@string/privacy_policy"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    app:textStyle="@integer/poppins_regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingTop="@dimen/_50sdp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/mNumberOne"
+                        android:layout_width="@dimen/_37sdp"
+                        android:layout_height="@dimen/_37sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/gray_circle">
+
+                        <com.netbazaar.view.NetbazaarTextView
+                            android:id="@+id/textOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_centerInParent="true"
+                            android:text="1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <com.netbazaar.view.NetbazaarTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textOne"
+                            android:layout_centerInParent="true"
+                            android:text="%^"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_5sdp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/mNumberTwo"
+                        android:layout_width="@dimen/_37sdp"
+                        android:layout_height="@dimen/_37sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/gray_circle">
+
+                        <com.netbazaar.view.NetbazaarTextView
+                            android:id="@+id/textTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_centerInParent="true"
+                            android:text="2"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <com.netbazaar.view.NetbazaarTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textTwo"
+                            android:layout_centerInParent="true"
+                            android:text="ABC"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_5sdp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/mNumberThree"
+                        android:layout_width="@dimen/_37sdp"
+                        android:layout_height="@dimen/_37sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/gray_circle">
+
+                        <com.netbazaar.view.NetbazaarTextView
+                            android:id="@+id/textThree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_centerInParent="true"
+                            android:text="3"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <com.netbazaar.view.NetbazaarTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textThree"
+                            android:layout_centerInParent="true"
+                            android:text="DEF"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_5sdp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/mNumberFour"
+                        android:layout_width="@dimen/_37sdp"
+                        android:layout_height="@dimen/_37sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/gray_circle">
+
+                        <com.netbazaar.view.NetbazaarTextView
+                            android:id="@+id/textFour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_centerInParent="true"
+                            android:text="4"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <com.netbazaar.view.NetbazaarTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textFour"
+                            android:layout_centerInParent="true"
+                            android:text="GHI"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_5sdp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/mNumberFive"
+                        android:layout_width="@dimen/_37sdp"
+                        android:layout_height="@dimen/_37sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/gray_circle">
+
+                        <com.netbazaar.view.NetbazaarTextView
+                            android:id="@+id/textFive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_centerInParent="true"
+                            android:text="5"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <com.netbazaar.view.NetbazaarTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textFive"
+                            android:layout_centerInParent="true"
+                            android:text="JKL"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_5sdp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/mNumberSix"
+                        android:layout_width="@dimen/_37sdp"
+                        android:layout_height="@dimen/_37sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/gray_circle">
+
+                        <com.netbazaar.view.NetbazaarTextView
+                            android:id="@+id/textSix"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_centerInParent="true"
+                            android:text="6"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <com.netbazaar.view.NetbazaarTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textSix"
+                            android:layout_centerInParent="true"
+                            android:text="MNO"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_5sdp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/mNumberSeven"
+                        android:layout_width="@dimen/_37sdp"
+                        android:layout_height="@dimen/_37sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/gray_circle">
+
+                        <com.netbazaar.view.NetbazaarTextView
+                            android:id="@+id/textSeven"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_centerInParent="true"
+                            android:text="7"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <com.netbazaar.view.NetbazaarTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textSeven"
+                            android:layout_centerInParent="true"
+                            android:text="PQRS"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_5sdp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/mNUmberEight"
+                        android:layout_width="@dimen/_37sdp"
+                        android:layout_height="@dimen/_37sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/gray_circle">
+
+                        <com.netbazaar.view.NetbazaarTextView
+                            android:id="@+id/textEight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_centerInParent="true"
+                            android:text="8"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <com.netbazaar.view.NetbazaarTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textEight"
+                            android:layout_centerInParent="true"
+                            android:text="TUV"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_5sdp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/mNumberNine"
+                        android:layout_width="@dimen/_37sdp"
+                        android:layout_height="@dimen/_37sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/gray_circle">
+
+                        <com.netbazaar.view.NetbazaarTextView
+                            android:id="@+id/textNine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_centerInParent="true"
+                            android:text="9"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <com.netbazaar.view.NetbazaarTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textNine"
+                            android:layout_centerInParent="true"
+                            android:text="WXYZ"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_5sdp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+                    <RelativeLayout
+                        android:id="@+id/mClear"
+                        android:layout_width="@dimen/_37sdp"
+                        android:layout_height="@dimen/_37sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/gray_circle">
+
+                        <com.netbazaar.view.NetbazaarTextView
+                            android:id="@+id/textClear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Clear"
+                            android:textColor="@color/black"
+                            android:padding="@dimen/_4sdp"
+                            android:textSize="@dimen/_8sdp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/mNumberZero"
+                        android:layout_width="@dimen/_37sdp"
+                        android:layout_height="@dimen/_37sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/gray_circle">
+
+                        <com.netbazaar.view.NetbazaarTextView
+                            android:id="@+id/textZero"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/mEnter"
+                        android:layout_width="@dimen/_37sdp"
+                        android:layout_height="@dimen/_37sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/gray_circle">
+
+                        <com.netbazaar.view.NetbazaarTextView
+                            android:id="@+id/textEnter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Enter"
+                            android:textColor="@color/black"
+                            android:padding="@dimen/_4sdp"
+                            android:textSize="@dimen/_8sdp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

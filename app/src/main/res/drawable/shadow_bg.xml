@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- solids that simulate shadow !-->
+    <item>
+        <shape>
+            <corners android:radius="@dimen/_5sdp"></corners>
+            <solid android:color="#10F54748" android:alpha="0.5"/>
+            <padding android:alpha="0.2" android:top="0dp" android:right="2dp" android:bottom="2dp" android:left="2dp" />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="@dimen/_5sdp"></corners>
+            <solid android:color="#20F54748" android:alpha="0.5" />
+            <padding android:alpha="0.2" android:top="0dp" android:right="2dp" android:bottom="2dp" android:left="2dp" />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="@dimen/_5sdp"></corners>
+            <solid android:color="#40F54748" android:alpha="0.5" />
+            <padding android:alpha="0.2" android:top="0dp" android:right="2dp" android:bottom="2dp" android:left="2dp" />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="@dimen/_5sdp"></corners>
+            <solid android:color="#50F54748" android:alpha="0.5" />
+            <padding android:top="0dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+        </shape>
+    </item>
+
+    <!-- main background !-->
+    <item>
+        <shape>
+            <stroke android:width="2dp" android:color="@color/red"></stroke>
+            <corners android:radius="@dimen/_5sdp"></corners>
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+
+
+</layer-list>
