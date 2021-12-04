@@ -13,12 +13,12 @@ public class NetbazaarTextView extends AppCompatTextView {
 
     public NetbazaarTextView(Context context) {
         this(context, null);
-        //super(context);
+        //FontsUtils.setFont(this,context,null);
     }
 
     public NetbazaarTextView(Context context, AttributeSet attrs) {
-        //super(context, attrs);
         this(context, attrs, android.R.attr.textViewStyle);
+        //FontsUtils.setFont(this,context,attrs);
     }
 
     public NetbazaarTextView(Context context, AttributeSet attrs, int defStyleAttr) {

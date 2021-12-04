@@ -23,132 +23,127 @@
             android:src="@drawable/man_women" />
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1.1"
-        android:orientation="vertical">
+        android:layout_weight="1.1">
 
-        <com.netbazaar.view.NetbazaarTextView
-            android:id="@+id/textHello"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/_32sdp"
-            android:layout_marginLeft="@dimen/_21sdp"
-            android:layout_marginTop="@dimen/_21sdp"
-            android:text="@string/hello"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_25sdp"
-            android:textStyle="bold"
-            app:textStyle="@integer/poppins_semibold" />
-
-        <com.netbazaar.view.NetbazaarTextView
-            android:id="@+id/textDetails"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_21sdp"
-            android:text="@string/details"
-            android:textAlignment="center"
-            android:textColor="@color/gray"
-            android:textSize="@dimen/_9sdp"
-            app:textStyle="@integer/poppins_regular" />
-
-        <com.netbazaar.view.NetbazaarTextView
-            android:id="@+id/textPhoneNumber"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_21sdp"
-            android:layout_marginTop="@dimen/_21sdp"
-            android:text="@string/phone_number"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="14dp"
-            android:textFontWeight="500"
-            app:textStyle="@integer/poppins_regular" />
-
-        <com.netbazaar.view.NetbazaarEditText
-            android:id="@+id/edTextPhoneNumber"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginLeft="@dimen/_21sdp"
-            android:layout_marginTop="@dimen/_2sdp"
-            android:layout_marginRight="@dimen/_21sdp"
-            android:background="@drawable/edit_text_background_style"
-            android:hint="@string/phone_number"
-            android:paddingLeft="20dp"
-            android:textSize="15dp"
-            app:textStyle="@integer/poppins_regular" />
-
-        <com.netbazaar.view.NetbazaarTextView
-            android:id="@+id/textPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_21sdp"
-            android:layout_marginTop="@dimen/_17sdp"
-            android:text="@string/store_code"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textFontWeight="500"
-            android:textSize="14dp"
-            app:textStyle="@integer/poppins_regular" />
-
-        <com.netbazaar.view.NetbazaarEditText
-            android:id="@+id/edTextPassword"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginLeft="@dimen/_21sdp"
-            android:layout_marginTop="@dimen/_2sdp"
-            android:layout_marginRight="@dimen/_21sdp"
-            android:background="@drawable/edit_text_background_style"
-            android:hint="@string/store_code"
-            android:paddingLeft="20dp"
-            android:textSize="15dp"
-            app:textStyle="@integer/poppins_regular" />
-
-        <com.netbazaar.view.NetbazaarTextView
-            android:id="@+id/textForgotPassword"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_21sdp"
-            android:layout_marginTop="@dimen/_2sdp"
-            android:layout_marginRight="@dimen/_21sdp"
-            android:text="@string/forgot_password"
-            android:textAlignment="textEnd"
-            android:textColor="@color/red"
-            android:textSize="14dp"
-            app:textStyle="@integer/poppins_regular" />
-
-        <FrameLayout
-            android:id="@+id/btnLogin"
-            android:layout_width="@dimen/_100sdp"
-            android:layout_height="@dimen/_35sdp"
-            android:layout_gravity="center"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:background="@drawable/button_background">
-
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp">
             <com.netbazaar.view.NetbazaarTextView
-                android:id="@+id/textLogin"
+                android:id="@+id/textHello"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="@dimen/_2sdp"
-                android:text="@string/login"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_8sdp"
+                android:text="@string/hello"
+                android:textColor="@color/black"
+                android:textSize="43sp"
+                android:textStyle="bold"
+                app:textStyle="@integer/poppins_semibold" />
+
+            <com.netbazaar.view.NetbazaarTextView
+                android:id="@+id/textDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/details"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textSize="17sp"
                 app:textStyle="@integer/poppins_regular" />
 
-        </FrameLayout>
+            <com.netbazaar.view.NetbazaarTextView
+                android:id="@+id/textPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_21sdp"
+                android:text="@string/phone_number"
+                android:textAlignment="center"
+                android:textColor="#222222"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:textStyle="@integer/poppins_semibold" />
 
+            <com.netbazaar.view.NetbazaarEditText
+                android:id="@+id/edTextPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/edit_text_background_style"
+                android:hint="@string/phone_number"
+                android:paddingLeft="20dp"
+                android:textSize="15dp"
+                app:textStyle="@integer/poppins_regular" />
+
+            <com.netbazaar.view.NetbazaarTextView
+                android:id="@+id/textPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_17sdp"
+                android:text="@string/store_code"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="14dp"
+                app:textStyle="@integer/poppins_regular" />
+
+            <com.netbazaar.view.NetbazaarEditText
+                android:id="@+id/edTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/edit_text_background_style"
+                android:hint="@string/store_code"
+                android:paddingLeft="20dp"
+                android:textSize="15dp"
+                app:textStyle="@integer/poppins_regular" />
+
+            <com.netbazaar.view.NetbazaarTextView
+                android:id="@+id/textForgotPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="@string/forgot_password"
+                android:textAlignment="textEnd"
+                android:textColor="@color/red"
+                android:textSize="14dp"
+                app:textStyle="@integer/poppins_regular" />
+
+            <FrameLayout
+                android:id="@+id/btnLogin"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/button_background">
+
+                <com.netbazaar.view.NetbazaarTextView
+                    android:id="@+id/textLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:text="@string/login"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    app:textStyle="@integer/poppins_regular" />
+
+            </FrameLayout>
+
+        </LinearLayout>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="bottom">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1sdp"
+            android:layout_alignParentBottom="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
-                android:layout_marginBottom="@dimen/_6sdp"
                 android:gravity="center_horizontal|center_vertical">
 
                 <View
@@ -185,6 +180,6 @@
             </LinearLayout>
 
         </RelativeLayout>
-    </LinearLayout>
+    </RelativeLayout>
 
 </LinearLayout>
