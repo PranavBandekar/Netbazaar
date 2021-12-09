@@ -5,6 +5,7 @@
     <string name="details">Enter your details to continue!</string>
     <string name="phone_number">Phone Number</string>
     <string name="table_number">Table Number</string>
+    <string name="one">1</string>
     <string name="password">Password</string>
     <string name="store_code">Store Code</string>
     <string name="forgot_password">Forgot password?</string>
@@ -14,6 +15,7 @@
     <string name="enter_passcode">Please Enter 6 digit Code</string>
     <string name="table">Table</string>
     <string name="place_order">Place Order</string>
+    <string name="continue_shopping">Continue Shopping</string>
     <string name="unpaid_order">Unpaid Order</string>
     <string name="paid_order">Paid Order</string>
     <string name="logout">Logout</string>
@@ -25,6 +27,8 @@
     <string name="open">OPEN</string>
     <string name="order">Order</string>
     <string name="details_cart">Details</string>
+    <string name="split_bill">Split Bill</string>
+    <string name="split">Split</string>
     <string name="tables">Tables</string>
     <string name="back">Back</string>
     <string name="view_table">View Table</string>

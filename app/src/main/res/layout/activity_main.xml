@@ -86,9 +86,8 @@
                 android:text="@string/store_code"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textFontWeight="500"
                 android:textSize="14dp"
-                app:textStyle="@integer/poppins_regular" />
+                app:textStyle="@integer/poppins_semibold" />
 
             <com.netbazaar.view.NetbazaarEditText
                 android:id="@+id/edTextPassword"

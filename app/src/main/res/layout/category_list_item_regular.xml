@@ -26,7 +26,7 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textFontWeight="600"
-        android:textSize="@dimen/_7sdp"
-        app:textStyle="@integer/poppins_semibold" />
+        android:textSize="11sp"
+        app:textStyle="@integer/poppins_regular" />
 
 </RelativeLayout>

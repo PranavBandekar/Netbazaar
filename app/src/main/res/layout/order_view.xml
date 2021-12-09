@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/cart_background"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/orderMenuBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.netbazaar.view.NetbazaarTextView
+            android:id="@+id/textTables"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:textStyle="@integer/poppins_semibold" />
+
+        <LinearLayout
+            android:id="@+id/btnOrderViewTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:background="@drawable/back_btn_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_2sdp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/eye" />
+
+            <com.netbazaar.view.NetbazaarTextView
+                android:id="@+id/textBack"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_7sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="@string/view_table"
+                android:textColor="@color/red"
+                android:textSize="11sp"
+                app:textStyle="@integer/poppins_regular" />
+        </LinearLayout>
+    </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewCartList"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/orderMenuBar"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="false"
+            android:scrollbars="none"
+            android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <com.netbazaar.view.NetbazaarTextView
+                android:id="@+id/textTotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/total_amt"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:textStyle="@integer/poppins_semibold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <com.netbazaar.view.NetbazaarTextView
+                    android:id="@+id/textDollar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    app:textStyle="@integer/poppins_regular" />
+
+                <com.netbazaar.view.NetbazaarTextView
+                    android:id="@+id/textPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.45"
+                    android:textColor="@color/black"
+                    android:textSize="26sp"
+                    app:textStyle="@integer/poppins_semibold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/btnPlaceOrder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_37sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/option_btn_bg">
+
+            <com.netbazaar.view.NetbazaarTextView
+                android:id="@+id/textPlaceOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/place_order"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:textStyle="@integer/poppins_regular" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/btnContinueShopping"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_17sdp"
+            android:layout_marginRight="@dimen/_17sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/back_btn_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:visibility="visible">
+
+            <com.netbazaar.view.NetbazaarTextView
+                android:id="@+id/textContinueShopping"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="@string/continue_shopping"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_7sdp"
+                app:textStyle="@integer/poppins_regular" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/btnSplitBill"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/gray_btn_bg"
+            android:visibility="gone">
+
+            <com.netbazaar.view.NetbazaarTextView
+                android:id="@+id/textSplitBillBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/split_bill"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8sdp"
+                app:textStyle="@integer/poppins_regular" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    </RelativeLayout>

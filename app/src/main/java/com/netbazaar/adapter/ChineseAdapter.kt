@@ -15,13 +15,13 @@ class ChineseAdapter (
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): ChineseAdapter.ChineseViewHolder {
+    ): ChineseViewHolder {
         val view =
             LayoutInflater.from(parent.context).inflate(R.layout.chineese_item, parent, false)
-        return ChineseAdapter.ChineseViewHolder(view)
+        return ChineseViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: ChineseAdapter.ChineseViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ChineseViewHolder, position: Int) {
         holder.bindView(popularDishList,context,position)
     }
 

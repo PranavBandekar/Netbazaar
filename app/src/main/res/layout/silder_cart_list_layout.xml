@@ -13,73 +13,58 @@
         android:background="@drawable/transferant_background">
 
     </LinearLayout>
+
+
+
     <LinearLayout
-        android:layout_width="match_parent"
         android:layout_weight="1"
+        android:layout_width="match_parent"
         android:orientation="vertical"
-        android:background="@drawable/cart_background"
+        android:visibility="visible"
+        android:background="@color/white"
         android:layout_height="match_parent">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_5sdp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
             <com.netbazaar.view.NetbazaarTextView
-                android:id="@+id/textTables"
+                android:id="@+id/textSplitBill"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/order"
+                android:text="@string/split_bill"
+                android:layout_margin="@dimen/_5sdp"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_12sdp"
                 app:textStyle="@integer/poppins_semibold" />
 
-            <LinearLayout
-                android:id="@+id/btnBack"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignRight="@+id/close"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/_20sdp"
-                android:background="@drawable/back_btn_bg"
-                android:gravity="center_vertical"
-                android:paddingLeft="@dimen/_3sdp"
-                android:paddingTop="@dimen/_2sdp"
-                android:paddingRight="@dimen/_3sdp"
-                android:paddingBottom="@dimen/_2sdp">
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/eye" />
+        <com.netbazaar.view.NetbazaarTextView
+            android:id="@+id/textSplit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_21sdp"
+            android:text="@string/split"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textFontWeight="500"
+            app:textStyle="@integer/poppins_regular" />
 
-                <com.netbazaar.view.NetbazaarTextView
-                    android:id="@+id/textBack"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_10sdp"
-                    android:layout_marginLeft="@dimen/_5sdp"
-                    android:text="@string/view_table"
-                    android:textColor="@color/red"
-                    android:textSize="@dimen/_7sdp"
-                    app:textStyle="@integer/poppins_regular" />
-            </LinearLayout>
-
-            <ImageView
-                android:id="@+id/close"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:src="@drawable/close" />
-
-
-        </RelativeLayout>
+        <com.netbazaar.view.NetbazaarEditText
+            android:id="@+id/edTextSplit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/edit_text_background_style"
+            android:hint="@string/one"
+            android:drawableRight="@drawable/down_arrow"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingLeft="20dp"
+            android:textSize="15dp"
+            app:textStyle="@integer/poppins_regular" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerviewCartList"
+            android:id="@+id/recyclerviewSplitCartList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="false"
@@ -89,9 +74,8 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="0dip"
+            android:layout_height="wrap_content"
             android:gravity="center|bottom"
-            android:layout_weight="1"
             android:orientation="vertical">
 
             <RelativeLayout
@@ -102,7 +86,7 @@
                 android:orientation="horizontal">
 
                 <com.netbazaar.view.NetbazaarTextView
-                    android:id="@+id/textTotalAmount"
+                    android:id="@+id/textSplitTotalAmount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/total_amt"
@@ -116,7 +100,7 @@
                     android:layout_alignParentRight="true"
                     >
                     <com.netbazaar.view.NetbazaarTextView
-                        android:id="@+id/textDollar"
+                        android:id="@+id/textSplitDollar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="$"
@@ -124,7 +108,7 @@
                         android:textSize="@dimen/_5sdp"
                         app:textStyle="@integer/poppins_regular"/>
                     <com.netbazaar.view.NetbazaarTextView
-                        android:id="@+id/textPrice"
+                        android:id="@+id/textSplitPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="5.45"
@@ -137,183 +121,8 @@
 
             </RelativeLayout>
 
-            <FrameLayout
-                android:id="@+id/btnPlaceOrder"
-                android:layout_width="@dimen/_150sdp"
-                android:layout_height="@dimen/_37sdp"
-                android:layout_marginTop="@dimen/_2sdp"
-                android:background="@drawable/option_btn_bg">
-
-                <com.netbazaar.view.NetbazaarTextView
-                    android:id="@+id/textPlaceOrder"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/place_order"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_8sdp"
-                    app:textStyle="@integer/poppins_regular" />
-
-            </FrameLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:background="@color/white"
-        android:layout_height="match_parent">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_5sdp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <com.netbazaar.view.NetbazaarTextView
-                android:id="@+id/textDetails"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/details_cart"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_12sdp"
-                app:textStyle="@integer/poppins_semibold" />
-
             <LinearLayout
-                android:id="@+id/btnViewTable"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:background="@drawable/back_btn_bg"
-                android:gravity="center_vertical"
-                android:layout_alignRight="@+id/closeOne"
-                android:layout_marginRight="@dimen/_20sdp"
-                android:paddingLeft="@dimen/_3sdp"
-                android:paddingTop="@dimen/_2sdp"
-                android:paddingRight="@dimen/_3sdp"
-                android:paddingBottom="@dimen/_2sdp">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/eye" />
-
-                <com.netbazaar.view.NetbazaarTextView
-                    android:id="@+id/textViewTable"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_10sdp"
-                    android:layout_marginLeft="@dimen/_5sdp"
-                    android:text="@string/view_table"
-                    android:textColor="@color/red"
-                    android:textSize="@dimen/_7sdp"
-                    app:textStyle="@integer/poppins_regular" />
-            </LinearLayout>
-
-            <ImageView
-                android:id="@+id/closeOne"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:visibility="visible"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:src="@drawable/close" />
-
-
-        </RelativeLayout>
-
-        <com.netbazaar.view.NetbazaarTextView
-            android:id="@+id/textTableNumber"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_21sdp"
-            android:text="@string/table_number"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="14dp"
-            android:textFontWeight="500"
-            app:textStyle="@integer/poppins_regular" />
-
-        <com.netbazaar.view.NetbazaarEditText
-            android:id="@+id/edTextPhoneNumber"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_2sdp"
-            android:layout_marginRight="@dimen/_10sdp"
-            android:background="@drawable/edit_text_background_style"
-            android:hint="@string/table_number"
-            android:drawableRight="@drawable/down_arrow"
-            android:paddingRight="@dimen/_5sdp"
-            android:paddingLeft="20dp"
-            android:textSize="15dp"
-            app:textStyle="@integer/poppins_regular" />
-
-        <com.netbazaar.view.NetbazaarTextView
-            android:id="@+id/textName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:text="@string/name"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="14dp"
-            android:textFontWeight="500"
-            app:textStyle="@integer/poppins_regular" />
-
-        <com.netbazaar.view.NetbazaarEditText
-            android:id="@+id/edTextName"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_2sdp"
-            android:layout_marginRight="@dimen/_10sdp"
-            android:background="@drawable/edit_text_background_style"
-            android:hint="@string/name"
-            android:paddingLeft="20dp"
-            android:textSize="15dp"
-            app:textStyle="@integer/poppins_regular" />
-
-        <com.netbazaar.view.NetbazaarTextView
-            android:id="@+id/textPhoneNumber_Cart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:text="@string/phone_number"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="14dp"
-            android:textFontWeight="500"
-            app:textStyle="@integer/poppins_regular" />
-
-        <com.netbazaar.view.NetbazaarEditText
-            android:id="@+id/edTextPhoneNumber_Cart"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_2sdp"
-            android:layout_marginRight="@dimen/_10sdp"
-            android:background="@drawable/edit_text_background_style"
-            android:hint="@string/phone_number"
-            android:paddingLeft="20dp"
-            android:textSize="15dp"
-            app:textStyle="@integer/poppins_regular" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dip"
-            android:gravity="center|bottom"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:id="@+id/btnContinue"
+                android:id="@+id/btnSplitContinue"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_centerVertical="true"
@@ -328,7 +137,7 @@
                 android:paddingBottom="@dimen/_5sdp">
 
                 <com.netbazaar.view.NetbazaarTextView
-                    android:id="@+id/textContinue"
+                    android:id="@+id/textSplitContinue"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_10sdp"
                     android:layout_marginLeft="@dimen/_5sdp"
@@ -337,11 +146,7 @@
                     android:textSize="@dimen/_7sdp"
                     app:textStyle="@integer/poppins_regular" />
             </LinearLayout>
-
         </LinearLayout>
-
-
-
     </LinearLayout>
 
 </LinearLayout>

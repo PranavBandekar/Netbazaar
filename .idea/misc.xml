@@ -7,6 +7,7 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/drawable/cart_background.xml" value="0.169140625" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/drawable/circle.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/drawable/circle_border.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/drawable/dialer_pad_bg.xml" value="0.169140625" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/drawable/edit_text_background_style.xml" value="0.22" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/drawable/gray_circle.xml" value="0.33828125" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/drawable/pop.xml" value="0.169140625" />
@@ -14,19 +15,22 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/drawable/regular_category_bg.xml" value="0.169140625" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/drawable/shadow_bg.xml" value="0.16125" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/drawable/transferant_background.xml" value="0.169140625" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/layout/activity_menus.xml" value="0.22" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/layout/activity_menus.xml" value="0.33" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/layout/activity_pin_code.xml" value="0.33" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/layout/activity_select_option.xml" value="0.3140625" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/layout/activity_tables.xml" value="0.2" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/layout/activity_tables.xml" value="0.5" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/layout/back_btn_bg.xml" value="0.15703125" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/layout/cart_list_item.xml" value="0.18" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/layout/category_list_item.xml" value="0.25" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/layout/category_list_item_regular.xml" value="0.5" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/layout/chineese_item.xml" value="0.33" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/layout/details_view.xml" value="0.67" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/layout/order_view.xml" value="0.3717948717948718" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/layout/popular_dishes_item.xml" value="0.33" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/layout/silder_cart_list_layout.xml" value="0.22" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/layout/silder_cart_list_layout.xml" value="0.18" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/layout/tables_list_item.xml" value="0.33" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Netbazaar/app/src/main/res/layout/transperant_view.xml" value="0.3140625" />
       </map>
     </option>
   </component>
